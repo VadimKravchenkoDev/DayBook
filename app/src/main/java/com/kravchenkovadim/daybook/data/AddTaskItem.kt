@@ -3,12 +3,11 @@ package com.kravchenkovadim.daybook.data
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "task_list_name")
-data class TaskListName(
+@Entity(tableName = "add_task_item")
+data class AddTaskItem(
     @PrimaryKey
     val id: Int? = null,
     val name: String,
-    val time: String,
-    val allItemsCount: Int,
-    val allSelectedItemsCount: Int
+    val isCheck: Boolean,
+    val listId: Int
 )
