@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase
     version = 1
 )
 abstract class MainDb: RoomDatabase() {
-    abstract val taskListItem: TaskListItemDao
-    abstract val addTaskItem : AddTaskItemDao
-    abstract val noteItem : NoteItemDao
+    abstract val taskListItemDao: TaskListItemDao
+    abstract val addTaskItemDao : AddTaskItemDao
+    abstract val noteItemDao : NoteItemDao
 }
