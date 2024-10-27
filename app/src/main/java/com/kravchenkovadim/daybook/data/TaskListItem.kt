@@ -3,7 +3,7 @@ package com.kravchenkovadim.daybook.data
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "task_list_item")
+@Entity(tableName = "task_list_item_table")
 data class TaskListItem(
     @PrimaryKey
     val id: Int? = null,
