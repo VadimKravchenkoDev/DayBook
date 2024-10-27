@@ -3,10 +3,10 @@ package com.kravchenkovadim.daybook.data
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "to-do_list_name")
-data class ToDoListName(
+@Entity(tableName = "task_list_name")
+data class TaskListName(
     @PrimaryKey
-    val id: Int,
+    val id: Int? = null,
     val name: String,
     val time: String,
     val allItemsCount: Int,
