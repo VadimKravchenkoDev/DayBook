@@ -11,9 +11,10 @@ import kotlinx.coroutines.flow.Flow
 interface TaskListItemDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertItem(item: TaskListItem)
+
     @Delete
     suspend fun deleteItem(item: TaskListItem)
+
     @Query("SELECT * FROM task_list_item_table")
     fun getAllItems(): Flow<List<TaskListItem>>
-
 }
